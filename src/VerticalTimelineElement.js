@@ -125,6 +125,7 @@ VerticalTimelineElement.defaultProps = {
   id: '',
   style: null,
   date: '',
+  dateStyle: null,
   dateClassName: '',
   position: '',
   textClassName: '',
