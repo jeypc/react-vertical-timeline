@@ -10,6 +10,7 @@ const VerticalTimelineElement = ({
   contentStyle,
   date,
   dateClassName,
+  dateStyle,
   icon,
   iconClassName,
   iconOnClick,
@@ -67,6 +68,7 @@ const VerticalTimelineElement = ({
             />
             {children}
             <span
+              style={dateStyle}
               className={classNames(
                 dateClassName,
                 'vertical-timeline-element-date'
@@ -90,6 +92,7 @@ VerticalTimelineElement.propTypes = {
   contentArrowStyle: PropTypes.shape({}),
   contentStyle: PropTypes.shape({}),
   date: PropTypes.node,
+  dateStyle: PropTypes.shape({}),
   dateClassName: PropTypes.string,
   icon: PropTypes.element,
   iconClassName: PropTypes.string,
